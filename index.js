@@ -3,39 +3,15 @@ const express=require('express')
 const app=express();
 
 app.get("/",(req,res)=>{
-    res.send(`<!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Express 101</title>
-    
-        <style>
-            *{
-                margin: 0;
-                padding: 0;
-                box-sizing: border-box;
-            }
-            body{
-                font-family: monospace;
-                font-size: 20px;
-            }
-            .container{
-                width: 50%;
-                margin: 2rem auto;
-                padding: 2rem;
-                background-color: bisque;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="container">
-            <h1>Hello Node js..You're awesome</h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis tempora cumque fugit aut numquam ex. Facilis deleniti omnis, rerum voluptate facere, animi soluta accusamus totam distinctio ad doloribus. Aperiam molestiae similique suscipit mollitia. Voluptatum dolores earum perspiciatis maxime? Consectetur, ducimus.</p>
-        </div>
-    </body>
-    </html>`)
+    res.send("<h1>I am Home Route</h1>")
+})
+
+app.get("/about",(req,res)=>{
+    res.send("<h1>I am About Route</h1>")
+})
+
+app.get("/help",(req,res)=>{
+    res.send("<h1>I am help route</h1>")
 })
 
 app.listen(4000,()=>{
