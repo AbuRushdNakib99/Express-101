@@ -19,7 +19,7 @@ app.get("/",(req,res)=>{
             }
             body{
                 font-family: monospace;
-                font-size: 10px;
+                font-size: 20px;
             }
             .container{
                 width: 50%;
